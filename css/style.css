@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+main{
+	font-family:"Lato" ;
+	color: #424551;
+	line-height: 160%;
+}
+[class*= "__conteiner"]{
+	max-width: 600px;
+	margin: 0 auto;
+	}
+h1{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+h3{
+	margin-top: 48px;
+	margin-bottom: 24px;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+}
+.block-list__conteiner ul{
+	margin-bottom: 4px;
+
+}
+.block-list__conteiner li::before{
+	padding-left: 32px;
+	background: url(../img/check.jpg) 0 0 no-repeat;
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.block-list__conteiner li:hover::before{
+	transition: all 0.8s ease 0s;
+	transform: rotate(360deg);
+}
+
+.block-list__conteiner{
+	margin-bottom: 200px;
+}
+h6{
+	font-weight: 700;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom:8px;
+}
+.block-title__conteiner h1{
+	margin-bottom: 16px;
+}
+.titel{
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.block-title__conteiner ul{
+	margin-bottom: 4px;
+	font-weight: 700;
+	margin-bottom: 32px;
+	
+}
+.star::before{
+	background: url(../img/Star.jpg) 0 0 no-repeat;
+   content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-left: 24px;
+}
+.star:hover::before{
+	transform: scale(1.5);
+}
+.vector::before{
+	background: url(../img/Play.jpg) 0 0 no-repeat;
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-left: 24px;
+}
+.vector:hover::before{
+	transform: scale(1.5);
+}
+.profile::before{
+	background: url(../img/Profile.jpg) 0 0 no-repeat;
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding-left: 24px;
+}
+.profile:hover::before{
+	transform: scale(1.5);
+}
+.block-text{
+	margin-bottom: 32px;
+}
+.facebook{
+	/* display: inline-block; */
+	margin-right:24px;
+}
+.behance{
+	margin-right:24px;
+}
+.twitter{
+	margin-right:24px;
+}
+
+/* ПСЕВДОКЛАСИ */
+footer{
+	max-width: 800px;
+	margin:0 auto;
+}
+.footer{
+	text-align: center;
+	border-radius: 25px;
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.footer:hover{
+	background: url(../img/pngtree.jpg) 0 0 no-repeat;
+	color: #c777b9;
+}
+.hover{
+	background-color: cornflowerblue;
+	color: coral;
+	margin-bottom: 20px;
+}
+.hover:hover{
+	background-color: #787A80;
+}
+
+.hover-item{
+	background-color: darksalmon;
+	margin-bottom: 30px;
+}
+.hover-item:hover  .hover-item__text{
+	background-color: #52cffe;
+	visibility: visible;
+	opacity: 0.1;
+}
+
+.visited .facebook{
+   border: 5px solid rgb(46, 6, 177);
+	padding: 15px 5px 15px 5px;
+}
+
+.visited .facebook:visited{
+	color: crimson;
+}
+.visited .instagram{
+	border: 5px solid rgb(191, 20, 69);
+	margin-right: 20px;
+	padding: 15px 5px 15px 5px;
+}
+.visited .instagram:visited{
+	color: crimson;
+}
+.visited .youtube{
+	border: 5px solid rgb(241, 5, 5);
+	padding: 15px 5px 15px 5px;
+}
+.visited .youtube:visited{
+	color: crimson;
+}
+.visited{
+	margin-bottom: 30px;
+}
+/* .active:focus{
+	outline: 2px solid red;
+} */
+.active:active{
+	color: chartreuse;
+}
+.active{
+	margin-bottom: 20px;
+}
+.focuc-link:focus{
+	outline: 6px double orangered;
+}
+.focus{
+	margin-bottom: 20px;
+}
+/* .block__item{
+	opacity: 1;
+	visibility: hidden;
+} */
+.block{
+	background-color: darkkhaki;
+	padding: 20px;
+	display: none;
+}
+.block:target{
+	display: block;
+}
+/* Не виходить, підпункти сховались, але при наведені не з'являються */
+ul ul{
+	display: none;
+}
+
+ul a:hover + ul{
+	display: block;
+}
+
+/* ПОЛОЖЕННЯ В КОДІ */
+.book{
+	margin-top: 30px;
+}
+
+.book p:first-child{
+	color: orangered;
+}
+.book p:first-of-type{
+	text-transform: uppercase;
+}
+.book p:last-child{
+	color: #aa8fd8;
+}
+.book p:nth-child(3){
+	color: brown;
+}
+.book p:not(:last-child){
+	margin-bottom: 15px;
+}
+.book p:nth-child(odd){
+	text-decoration: line-through;
+}
+.book p:nth-child(even){
+	text-transform: capitalize;
+}
+/* ПСЕВДОЕЛЕМЕНТИ */
+.psevdo::before{
+	content: "=";
+}
+.psevdo::after{
+	content: "=";
+}
+.element::before{
+	content: "-/-";
+}
+.element::after{
+	content: "-/-";
+}
+ol{
+	margin-left: 30px;
+	margin-bottom: 10px;
+	counter-reset: item;
+}
+ol li::before{
+	counter-increment: item;
+	content: counter(item) ")";
+	color: darkorange;
+	display: inline-block;
+	margin-right: 10px;
+}
+.item{
+	margin-left: 30px;
+}
+.item li:not(:last-child){
+	margin-bottom: 15px;
+}
+.item li::before{
+	background: url(../img/check.jpg) 0 0 no-repeat;
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 10px;
+	/* transition: all 0.8s ease 0s; */
+}
+.item li:hover::before{
+	transition: all 0.8s ease 0s;
+	/* transform: scale(1.5); */
+	transform: rotate(350deg);
+}
